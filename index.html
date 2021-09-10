@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Name Portfolio Site</title>
+        <meta name="description" content="Your Name のPortfolio Siteです。">
+        <meta property="og:title" content="Your Name Portfolio Site">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="#">
+        <meta property="og:image" content="images/common/ogimage.png">
+        <meta property="og:site_name" content="Your Name Portfolio Site">
+        <meta property="og:description" content="Your Name のPortfolio Siteです。">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="apple-touch-icon" href="images/IMG_2490_Original.HEIC">
+        <link rel="shortcut icon" href="images/IMG_1047.JPG">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a19c8c650f.js" crossorigin="anonymous"></script>
+
+
+        <!-- resetでブラウザごとの潜在CSSを打ち消す -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ここから下に、ブラウザに表示したい内容を記述する ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+        <div class="hero-image">
+            <img src="images/IMG_0022.jpg" alt="JOJO立ち">
+            <p class="hero-image__text">Hey guys! We have a gift for you!! </p>
+        </div>
+        <header class="header">
+            <div class="wrapper header-wrapper">
+                <h1 class="site-title">Tani Yuki Portfolio Web</h1>
+                
+                <nav>
+                    <ul class="nav-list">
+                        <!-- リスト化して押したら飛べるようにする -->
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#works">Works</a></li>
+                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                    
+                    
+                    
+                </nav>
+            </div>
+        </header>
+            
+        
+        <main>
+            <section id="about" class="profile">
+                <div class="profile-wrapper">
+                    <h2 class="text-center profile__titele">About Me</h2>
+                    <div class="text-center profile__eyecatch">
+                        <img src="images/IMG_1074.jpeg" alt="谷勇紀 いちご畑">
+                    </div>
+                    <h3 class="text-center profile__name">Your Name Is</h3>
+                    <p class="profile__text">私はサウナが好き
+                        <a href="https://sauna-ikitai.com/saunners/72784" target="blank">サウナイキタイ</a>
+                    プログラミングなう。楽しい。aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                
+                </div>
+                
+            </section>     
+                    
+            <section id="Works" class="works">
+                <div class="wrapper">
+                    <h2 class="works__titele text-center">Works</h2>
+
+                    <ul class="works__list">
+                        <li class="works__item">
+                            <div class="works__eyecatch">
+                                <img class="img__size" src="images/IMG_7713.JPG" alt="入学式">
+                            </div>
+                            <div class="works__contents">
+                                <h3 class="works__heading">高石高校に入学しました！</h3>
+                                <p>＜2016年　4月＞</p> 
+                            </div>
+                        </li>
+                        
+                        <li class="works__item">
+                            <div class="works__eyecatch">
+                                <img class="img__size" src="images/IMG_2860.JPG" alt="タイのクラブ">
+                            </div>
+                            <div class="works__contents">
+                                <h3 class="works__heading">タイ旅行に行きました！</h3>
+                                <p>＜2018年　3月＞</p>
+                            </div>
+                        </li>
+                    
+                        <li class="works__item">
+                            <div class="works__eyecatch">
+                                <img class="img__size" src="images/IMG_5682.JPG" alt="文化祭バンド">
+                            </div>
+                            <div class="works__contents">
+                                <h3 class="works__heading">高3の文化祭でバンドをやりました！</h3>
+                                <p>＜2019年　9月＞</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- targetタグは押すとどこに移るか。blankの場合新ページ -->
+                    <a href="#" target="blank" class="btn text-center">もっと見る</a>
+                </div>
+            </section>  
+
+            <section id="Contact" class="contact">
+                <div class="form-wrapper">
+                    <h2 class="contact__title text-center">contact</h2>
+                    
+                    <form action="#" method="POST">
+                        <dl class="form-inner">
+                            <dt class="form-title">お名前</dt>
+                            <dd class="form-item"><input type="text" name="name" id="name" class="form-parts"></dd>
+                            <dt class="form-title">メールアドレス</dt>
+                            <dd class="form-item"><input type="email" name="email" id="email" class="form-parts"></dd>
+                            <dt class="form-title check-radio">お問い合わせ内容</dt>
+                                <dd class="form-item">
+                                    <!-- kindは3項目を同じ括りだと示すために　valueで紐付け -->
+                                    <label for="meshi" class="form-label"><input type="radio" name="kind" id="meshi" value="ご飯のお誘い">ご飯のお誘い</label>
+                                    <label for="zoom" class="form-label"><input type="radio" name="kind" id="zoom" value="ZOOMのお誘い">ZOOMのお誘い</label>
+                                    <label for="other" class="form-label"><input type="radio" name="kind" id="other" value="その他">その他</label>
+                                </dd>
+                            <dt class="form-title">お問い合わせ詳細</dt>
+                            <dd class="form-item">
+                                <textarea name="detil" id="datil" cols="30" rows="10" class="form-parts"></textarea>
+                            </dd>
+                        </dl>
+                        <input type="submit" value="送信" class="btn btn-submit">
+                    </form>
+                    
+                </div>
+            </section>
+        </main>
+        
+        <footer class="fotter text-center">
+            <!-- 文の一部だけを変化させたい時spanタグで囲う　便利 -->
+            <div class="wrapper">
+                <a href="#" class="btn-pagetop"><span class="fa fa-angle-up icon-up"></span></a>
+                <small class="copyrights">Copyright 2021- Your Name All Rights Reserved.</small> 
+            </div>
+        </footer>
+        <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ここから上に、ブラウザに表示したい内容を記述する ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
+    </body>
+
+</html>
